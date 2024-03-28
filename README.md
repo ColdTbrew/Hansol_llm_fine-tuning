@@ -7,9 +7,10 @@
 ## Member   
 ### 
   **최승혁**  
-  [Dacon](https://dacon.io/myprofile/472402/home)
-  [Github](https://github.com/ColdTbrew)
+  [Dacon](https://dacon.io/myprofile/472402/home)  
+  [Github](https://github.com/ColdTbrew)  
   [Hugging-Face](Coldbrew9/Fine-tuning-gemma-singleQ)  
+  
 ----------------------------------------------------------
 ## 데이터  
 ![데이터 프리뷰](./pngs/data_preview.png)  
