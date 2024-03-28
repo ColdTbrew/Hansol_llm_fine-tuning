@@ -3,6 +3,9 @@
 [![대회정보](./pngs/dacon.png)](https://dacon.io/competitions/official/236216/overview/description)  
 - 대회 바로가기 이미지 클릭
 - 이번 시즌 2에서는 한 걸음 더 나아가, NLP(자연어 처리) 기반의 QA (질문-응답) 시스템을 통해 도배하자와 관련된 깊이 있는 질의응답 처리 능력을 갖춘 AI 모델 개발에 도전합니다.
+## Private 순위  
+![순위](pngs/leader-board.png)
+
 
 ## Member   
 ### 
