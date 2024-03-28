@@ -15,6 +15,29 @@
   [Hugging-Face](Coldbrew9/Fine-tuning-gemma-singleQ)  
   
 ----------------------------------------------------------
+
+# Table of Contents
+
+1. [Introduction](#🚧Hansol_llm_fine-tuning)
+2. [Private 순위](#private-순위)
+3. [Member](#member)
+4. [데이터](#데이터)
+   - [train.csv](#train.csv)
+   - [test.csv](#test.csv)
+   - [sample_submission.csv](#sample_submission.csv)
+5. [평가 산식](#평가-산식)
+6. [접근 방식](#접근-방식)
+   - [파인튜닝 시도](#1-파인튜닝-시도)
+   - [RAG(Retrieval-Augmented Generation) 방식 추가 시도](#2-ragretrieval-augmented-generation-방식-추가-시도)
+   - [Gemma 모델 시도](#3-gemma-모델-시도)
+   - [학습 데이터셋 구조 조정](#4-학습-데이터셋-구조-조정)
+   - [하이퍼파라미터 설정 및 특징](#하이퍼파라미터-설정-및-특징)
+7. [Wandb](#wandb)
+8. [Special Thanks to](#special-thanks-to)
+
+----------------------------------------------------------
+
+
 ## 데이터  
 ![데이터 프리뷰](./pngs/data_preview.png)  
 ### train.csv
