@@ -57,10 +57,24 @@
 - 테스트셋은 두 질문을 한 번에 물어보고, 두 질문에 대한 두 개의 답을 생성해야 하는 구조였습니다.
 - 이에 따라, 학습셋에서 임의로 문제를 두 개씩 합쳐서 학습을 진행하였습니다.
 
-## 결론
+### 하이퍼파라미터 설정 및 특징
 
-본 프로젝트에서 시도된 다양한 접근 방식들은 각각의 장단점이 있었으며, 이를 통해 최적의 결과를 도출하기 위한 방향성을 모색할 수 있었습니다.
+메모리 효율을 높이기 위해 `lora rank = 8`을 사용했습니다. 각 하이퍼파라미터의 선택이 학습 과정과 모델 성능에 미치는 영향을 간결하게 설명합니다.
+
+- **per_device_train_batch_size=2**: 메모리 사용 최소화를 위해 디바이스 당 배치 크기 2를 사용.
+- **gradient_accumulation_steps=4**: 더 큰 배치 사이즈의 이점을 얻기 위해 그래디언트 누적 스텝 4 설정.
+- **warmup_ratio=0.03**: 전체 학습 스텝의 3% 동안 학습률을 점진적으로 증가시킴.
+- **num_train_epochs=10**: 총 10 에폭 동안 모델 학습.
+- **learning_rate=2e-4**: 학습률을 0.0002로 설정하여 안정적인 수렴을 도모.
+- **fp16=True**: 16비트 부동 소수점을 사용하여 계산 효율성 및 메모리 사용 최소화.
+- **logging_steps=1**: 모든 스텝마다 로깅을 수행하여 학습 과정 모니터링.
+- **optim="paged_adamw_8bit"**: 메모리 사용을 줄이기 위해 8비트 최적화된 AdamW 사용.
+- **report_to="wandb"**: 학습 과정과 결과를 Weights & Biases에 기록.
 
 ## Wandb
 - Gemma training  
   https://wandb.ai/x_team/Fine%20tuning%20gemma%20singleQ/reports/Hansol-llm-fine-tuning-with-Gemma--Vmlldzo3MzI4MDg3
+
+### Special Thanks to  
+[정봉기](https://github.com/JB0527)
+[정준한](https://github.com/hyjk826)
