@@ -34,6 +34,17 @@
 
     
 ----------------------------------------------------------
-# ViT-Adapter  
+# 접근 방식
+1. 파인튜닝 시도
+  - [Ko-llm-leaderboard](https://huggingface.co/spaces/upstage/open-ko-llm-leaderboard)의 1위인 ldcc 파인튜닝 해봤지만 tokenizer 조절이 어려워
+  - 2위인 Edentns/DataVortexS-10.7B-dpo-v1.11로 시도해봄
+3. RAG 방식 추가 시도
+4. Gemma 출시로 Gemma 시도해봤습니다.
+5. 학습 데이터셋은 한질문에 한답만 있는 구조였지만 테스트셋은 두질문을 한번에 물어봐 두질문에 대한 두개의 답을 생성해내야하기 때문에 학습셋에서 임의로 문제를 두개씩 합쳐서 학습을 진행
 
 
+
+
+## Wandb
+- Gemma training  
+  https://wandb.ai/x_team/Fine%20tuning%20gemma%20singleQ/reports/Hansol-llm-fine-tuning-with-Gemma--Vmlldzo3MzI4MDg3
