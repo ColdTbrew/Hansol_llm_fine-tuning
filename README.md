@@ -1,4 +1,4 @@
-# Hansol_llm_fine-tuning
+# 🚧Hansol_llm_fine-tuning
 도배 하자 질의 응답 처리 : 한솔데코 시즌2 AI 경진대회
 [![대회정보](./pngs/dacon.png)](https://dacon.io/competitions/official/236216/overview/description)  
 - 대회 바로가기 이미지 클릭
